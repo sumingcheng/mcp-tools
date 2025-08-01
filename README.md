@@ -49,6 +49,15 @@ uv sync
 python main.py
 ```
 
+## 本地构建
+
+```
+# 镜像构建
+make build 
+# 启动
+make up 
+```
+
 ## 贡献
 
 欢迎任何形式的 PR 
