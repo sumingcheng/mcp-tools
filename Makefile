@@ -2,7 +2,7 @@ docker_image_name ?= mcp-tools
 docker_image_tag ?= v1.0.0
 
 build:
-	docker build -f deploy/Dockerfile -t $(docker_image_name):$(docker_image_tag) .
+	docker build -f deploy/Dockerfile -t $(docker_image_name):$(docker_image_tag) --build-arg USE_CHINA_MIRROR=true .
 
 run:
 	cd deploy && docker-compose -f docker-compose.yaml up -d
