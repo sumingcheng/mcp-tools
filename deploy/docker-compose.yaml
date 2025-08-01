@@ -3,6 +3,8 @@ version: '3.7'
 services:
   mcp-tools:
     image: mcp-tools:v1.0.0
+    container_name: mcp-tools
+    restart: unless-stopped
     ports:
       - 33669:33669
     networks:
