@@ -1,4 +1,4 @@
-## MCP 工具简介
+## 本地工具集
 
 该项目是 MCP 工具示例项目，启动后你可以直接配置在 Cursor、Cherry-Studio 等支持 MCP 协议的工具或者模型上~
 之后会朝着 Dify MCP 工具集的方向去做
