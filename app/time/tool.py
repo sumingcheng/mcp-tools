@@ -10,16 +10,12 @@ def get_current_time_for_timezone(tz_name: str = "UTC") -> str:
         # 验证时区是否有效
         if tz_name not in all_timezones:
             return f"无效的时区：{tz_name}。请使用 pytz.all_timezones 中的有效时区。"
-
         # 获取时区对象
         tz = timezone(tz_name)
-
         # 获取指定时区的当前时间
         current_time = datetime.now(tz)
-
         # 格式化时间为字符串
         formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
-
         return f"{tz_name} 的当前时间：{formatted_time}"
 
     except Exception as e:

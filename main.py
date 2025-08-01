@@ -1,8 +1,5 @@
 from app.common.mcp import mcp
-from app.tool_loader import load_tools
-
-# 自动加载所有工具
-load_tools()
+import app.register  # 注册工具
 
 if __name__ == "__main__":
     mcp.run(transport="sse", host="0.0.0.0", port=33669)
