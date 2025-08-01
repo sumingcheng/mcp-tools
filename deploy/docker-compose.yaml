@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  mcp-tools:
+    image: mcp-tools:v1.0.0
+    ports:
+      - 33669:33669
+    networks:
+      - mcp-tools-network
+
+networks:
+  mcp-tools-network:
+    name: mcp-tools-network

@@ -1,9 +1,10 @@
 [project]
 name = "mcp-tools"
 version = "0.1.0"
-description = "Add your description here"
+description = "LLM MCP Tools"
 readme = "README.md"
 requires-python = ">=3.10.13"
 dependencies = [
     "fastmcp>=2.10.6",
+    "pytz>=2025.2",
 ]
