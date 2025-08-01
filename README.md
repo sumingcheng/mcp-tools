@@ -42,3 +42,13 @@
 - **calculate**：执行基本的数学计算
 - **advanced_calculate**：执行高级数学计算
 
+## 本地开发
+
+```
+uv sync
+python main.py
+```
+
+## 贡献
+
+欢迎任何形式的 PR 
