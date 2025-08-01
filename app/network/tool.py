@@ -1,4 +1,3 @@
-from app.common.mcp import mcp
 import platform
 import socket
 import httpx
@@ -6,6 +5,7 @@ import subprocess
 import dns.resolver
 import psutil
 from typing import List, Dict, Optional
+from app.common.mcp import mcp
 
 
 @mcp.tool(name="ping_host", description="检测与目标主机的网络连通性")

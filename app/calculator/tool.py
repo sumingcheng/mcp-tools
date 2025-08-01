@@ -1,7 +1,7 @@
-from app.common.mcp import mcp
 import ast
 import math
 import operator
+from app.common.mcp import mcp
 
 
 @mcp.tool(name="calculate", description="执行基本的数学计算，支持加减乘除和幂运算")
