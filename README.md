@@ -1,8 +1,9 @@
-## MCP 工具简介
+## MCP Tools Introduction
 
-该项目是 MCP 工具示例项目，启动后你可以直接配置在 Cursor、Cherry-Studio 等支持 MCP 协议的工具或者模型上~
-之后会朝着 Dify MCP 工具集的方向去做
-### Cursor 配置示例
+This project is an MCP tools sample project. After starting, you can directly configure it on tools or models that support the MCP protocol, such as Cursor, Cherry-Studio, etc.
+In the future, it will be developed in the direction of Dify MCP toolset.
+
+### Cursor Configuration Example
 
 ```
 {
@@ -10,7 +11,7 @@
     "MCP Tools": {
       "name": "MCP Tools",
       "type": "url",
-      "description": "MCP 工具",
+      "description": "MCP Tools",
       "isActive": true,
       "url": "http://127.0.0.1:33669/sse/"
     }
@@ -18,46 +19,46 @@
 }
 ```
 
-### 效果展示
+### Demo
 
 <img width="976" height="709" alt="image" src="https://github.com/user-attachments/assets/fc9f469f-0a10-44a2-82e3-9f561b2aace8" />
 
 
-### 时间相关工具
-- **get_current_time_for_timezone**：获取指定时区的当前时间
-- **convert_time_between_timezones**：将一个时区的时间转换为另一个时区
-- **time_difference_between_timezones**：计算两个时区的时间差
-- **is_leap_year**：判断指定年份是否为闰年
+### Time-related Tools
+- **get_current_time_for_timezone**: Get current time for a specified timezone
+- **convert_time_between_timezones**: Convert time from one timezone to another
+- **time_difference_between_timezones**: Calculate time difference between two timezones
+- **is_leap_year**: Determine if a specified year is a leap year
 
-### 网络相关工具
-- **ping_host**：检测与目标主机的网络连通性
-- **get_local_ip**：获取本机 IP 地址信息
-- **get_public_ip**：获取公网 IP 地址
-- **dns_lookup**：执行 DNS 查询
-- **check_port**：检查指定主机的端口是否开放
-- **http_request**：发送 HTTP 请求并获取响应
-- **download_file**：下载文件
+### Network-related Tools
+- **ping_host**: Check network connectivity with target host
+- **get_local_ip**: Get local IP address information
+- **get_public_ip**: Get public IP address
+- **dns_lookup**: Perform DNS lookup
+- **check_port**: Check if a port on a specified host is open
+- **http_request**: Send HTTP requests and get responses
+- **download_file**: Download files
 
-### 数学计算工具
-- **calculate**：执行基本的数学计算
-- **advanced_calculate**：执行高级数学计算
+### Math Calculation Tools
+- **calculate**: Perform basic math calculations
+- **advanced_calculate**: Perform advanced math calculations
 
-## 本地开发
+## Local Development
 
 ```
 uv sync
 python main.py
 ```
 
-## 本地构建
+## Local Build
 
 ```
-# 镜像构建
+# Build image
 make build 
-# 启动
+# Start
 make up 
 ```
 
-## 贡献
+## Contribution
 
-欢迎任何形式的 PR 
+Any form of PR is welcome
